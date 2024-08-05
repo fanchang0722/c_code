@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 int main() {
-	int i = 0;
-	for(i; i<5; i++) {
-		printf("number is %d\n", i);
+	int sum = 0;
+	for(int i = 0; i<=100; i++) {
+		// printf("number is %d\n", i);
+		sum += i;
 	}
-	printf("%d", i);
+	printf("%d", sum);
 	return 0;
 }
