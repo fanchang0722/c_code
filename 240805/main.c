@@ -2,10 +2,20 @@
 #include <stdio.h>
 
 int main() {
-	for (int i=1; i<=5; i++) {
-		printf("%d\n", i);
-		break;
-		printf("after the break");
+
+	while(1) {
+		int number;
+		printf("Please input a number: ");
+		scanf("%d", &number);
+		if (number<=0)
+			break;
+		if (number % 2 !=0)
+			continue;
+		printf("Even number is %d\n", number);
+		// if (number % 2 == 0)
+		// 	printf("Even number is %d\n", number);
+		// else
+		// 	continue;
 	}
 	return 0;
 }
