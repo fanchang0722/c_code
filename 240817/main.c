@@ -10,22 +10,26 @@ void findSquare(int* num) {
 	*num= square;
 }
 
-int* addNumbers(int* num1, int* num2) {
-	int* sum;
-	*sum = *num1 + *num2;
+int addNumbers(int* num1, int* num2) {
+	int sum;
+	sum = *num1 + *num2;
+	// printf("product is %d\n", *sum);
 	return sum;
 }
 
 int main() {
 	int number = 21;
+	findValue(&number);
 	findSquare(&number);
 	printf("Number is %d\n", number);
 	int num1 = 3;
 	int num2 = 4;
-	// int sum;
-	// int sum = addNumbers(&num1, &num2);
-	int* result = addNumbers(&num1, &num2);
+	int sum;
+	sum = addNumbers(&num1, &num2);
+	// addNumbers(&num1, &num2, &sum);
 	// printf("sum is %d\n", sum);
-	printf("sum is %d\n", *result);
+	printf("sum is %d\n", sum);
+	printf("sum is %p\n", &sum);
+	return 0;
 	return 0;
 }
